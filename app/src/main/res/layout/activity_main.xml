@@ -224,6 +224,7 @@
         android:drawableStart="@drawable/key_black"
         android:drawablePadding="10dp"
         app:passwordToggleEnabled="true"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="@+id/etMail1"
         app:layout_constraintStart_toStartOf="@+id/etMail1"
         app:layout_constraintTop_toBottomOf="@+id/etMail1"
