@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/person_black"
+            android:title="Contact US"/>
+        <item
+            android:id="@+id/settings_menu"
+            android:icon="@drawable/settings_"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout1"
+            android:title="LogOut"/>
+
+
+
+
+    </group>
+
+</menu>
