@@ -74,40 +74,41 @@ public class Login extends AppCompatActivity {
 
       // Navigation Drawer Stating...
 
-//        nav = findViewById(R.id.nv);
-//        drawer = findViewById(R.id.drawer);
-//
-//        //getSupportActionBar().hide();
-//     toolbar=(Toolbar)findViewById(R.id.toolBar);
-//        setSupportActionBar(toolbar);
-//
-//        toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.open,R.string.close);
-//        drawer.addDrawerListener(toggle);
-//        toggle.syncState();
-//
-//        // Adding Click events to our navigation drawer
-//        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                switch (item.getItemId())
-//                {
-//                    case R.id.contactus:
-//                        Toast.makeText(Login.this, "contact open", Toast.LENGTH_SHORT).show();
-//                        drawer.closeDrawer(GravityCompat.START);
-//                        break;
-//                    case R.id.settings_menu:
-//                        Toast.makeText(Login.this, "settings open", Toast.LENGTH_SHORT).show();
-//                        drawer.closeDrawer(GravityCompat.START);
-//                        break;
-//                    case R.id.logout:
-//                        Toast.makeText(Login.this, "logout", Toast.LENGTH_SHORT).show();
-//                        //drawer.closeDrawer(GravityCompat.START);
-//                        finish();
-//                        break;
-//                }
-//                return true;
-//            }
-//        });
+        nav = findViewById(R.id.nvLog);
+        drawer = findViewById(R.id.drawerLog);
+
+        //getSupportActionBar().hide();
+     toolbar=(Toolbar)findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        nav.setVisibility(View.VISIBLE);
+
+        toggle = new ActionBarDrawerToggle(this,drawer,toolbar,R.string.open,R.string.close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        // Adding Click events to our navigation drawer
+        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId())
+                {
+                    case R.id.contactus:
+                        Toast.makeText(Login.this, "contact open", Toast.LENGTH_SHORT).show();
+                        drawer.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.settings_menu:
+                        Toast.makeText(Login.this, "settings open", Toast.LENGTH_SHORT).show();
+                        drawer.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.logout:
+                        Toast.makeText(Login.this, "logout", Toast.LENGTH_SHORT).show();
+                        //drawer.closeDrawer(GravityCompat.START);
+                        finish();
+                        break;
+                }
+                return true;
+            }
+        });
 
     }
 

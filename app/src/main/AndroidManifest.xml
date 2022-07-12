@@ -12,13 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IdeaBytes"
         tools:ignore="ExtraText">
-        <activity
-            android:name=".Login_New"
-            android:exported="false"/>
 
-        <activity
-            android:name=".Register_New"
-            android:exported="false" />
         <activity
             android:name=".Registration_success"
             android:exported="false" />

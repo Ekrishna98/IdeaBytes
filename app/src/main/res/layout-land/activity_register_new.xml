@@ -41,8 +41,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/toolBar"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="175dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -69,8 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iv1"
-                android:layout_marginEnd="30dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
                 android:orientation="vertical">
 
 
@@ -81,16 +81,16 @@
                     android:hint="First Name"
                     app:boxBackgroundMode="outline"
                     app:boxStrokeColor="#303F9F"
-                    app:hintTextColor="#303F9F"
                     app:endIconMode="clear_text"
+                    app:hintTextColor="#303F9F"
                     app:startIconDrawable="@drawable/person_black">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etFN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -98,18 +98,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:hint="Last Name"
-                    app:boxStrokeColor="#303F9F"
-                    app:hintTextColor="#303F9F"
                     app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#303F9F"
                     app:endIconMode="clear_text"
+                    app:hintTextColor="#303F9F"
                     app:startIconDrawable="@drawable/person_black">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etLN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -117,18 +117,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:hint="E-mail"
-                    app:boxStrokeColor="#303F9F"
-                    app:hintTextColor="#303F9F"
                     app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#303F9F"
                     app:endIconMode="clear_text"
+                    app:hintTextColor="#303F9F"
                     app:startIconDrawable="@drawable/email_black">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etMail1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -136,18 +136,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:hint="PhoneNumber"
-                    app:boxStrokeColor="#303F9F"
-                    app:hintTextColor="#303F9F"
                     app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#303F9F"
                     app:endIconMode="clear_text"
+                    app:hintTextColor="#303F9F"
                     app:startIconDrawable="@drawable/phone_black">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTextPhone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:inputType="phone" />
+                        android:inputType="phone"
+                        android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -155,18 +155,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:hint="Password"
-                    app:boxStrokeColor="#303F9F"
-                    app:hintTextColor="#303F9F"
                     app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#303F9F"
                     app:endIconMode="password_toggle"
+                    app:hintTextColor="#303F9F"
                     app:startIconDrawable="@drawable/lock">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etPass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -174,18 +174,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:hint="Conform Password"
-                    app:boxStrokeColor="#303F9F"
-                    app:hintTextColor="#303F9F"
                     app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#303F9F"
                     app:endIconMode="password_toggle"
+                    app:hintTextColor="#303F9F"
                     app:startIconDrawable="@drawable/lock">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etCnPass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
@@ -195,9 +195,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/Linear_Data"
                 android:layout_marginTop="5dp"
-                android:gravity="end"
                 android:layout_marginEnd="20dp"
-                android:paddingEnd="20dp"
+                android:gravity="end"
+                android:paddingEnd="40dp"
                 android:text="ForgotPassword ?"
                 android:textColor="#303F9F"
                 android:textSize="17sp" />
