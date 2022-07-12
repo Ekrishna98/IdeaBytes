@@ -13,6 +13,13 @@
         android:theme="@style/Theme.IdeaBytes"
         tools:ignore="ExtraText">
         <activity
+            android:name=".Login_New"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Register_New"
+            android:exported="false" />
+        <activity
             android:name=".Registration_success"
             android:exported="false" />
         <activity
@@ -22,10 +29,13 @@
             android:name=".Home_page"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
+
         <activity
             android:name=".Register"
             android:exported="false" /> <!-- <intent-filter> -->

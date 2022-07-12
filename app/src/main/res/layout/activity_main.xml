@@ -99,28 +99,28 @@
         app:layout_constraintStart_toStartOf="@+id/etLN"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
-    <EditText
-        android:id="@+id/etLN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:autofillHints=""
-        android:background="@drawable/ideabytesresource"
-        android:drawableStart="@drawable/person_black"
-        android:drawablePadding="10dp"
-        android:hint="@string/last_name"
-        android:inputType="textPersonName"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/etFN"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/etFN"
-        app:layout_constraintTop_toBottomOf="@+id/etFN" />
+        <EditText
+            android:id="@+id/etLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:autofillHints=""
+            android:background="@drawable/ideabytesresource"
+            android:drawableStart="@drawable/person_black"
+            android:drawablePadding="10dp"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/etFN"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etFN"
+            app:layout_constraintTop_toBottomOf="@+id/etFN" />
 
-    <Button
+        <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -178,27 +178,13 @@
         app:layout_constraintStart_toStartOf="@+id/etPass"
         app:layout_constraintTop_toBottomOf="@+id/etPass" />
 
-    <com.hbb20.CountryCodePicker
-        android:id="@+id/ccp"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        android:gravity="center"
-        app:ccp_autoDetectCountry="true"
-        app:ccp_contentColor="@color/black"
-        app:ccp_defaultNameCode="india"
-        app:ccp_showNameCode="false"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/etLN"
-        tools:ccp_textSize="15dp">
 
-    </com.hbb20.CountryCodePicker>
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/ideabytesresource"
@@ -232,16 +218,46 @@
         android:inputType="textPassword"
         android:textSize="20sp" />
 
+        <Spinner
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ideabytesresource"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLN" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nv"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/navigation_menu" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+<!--<com.google.android.material.navigation.NavigationView-->
+<!--android:id="@+id/nv"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_gravity="start"-->
+<!--app:headerLayout="@layout/nav_header"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:menu="@menu/navigation_menu" />-->
+
+
+<!--<com.hbb20.CountryCodePicker-->
+<!--android:id="@+id/ccp"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="48dp"-->
+<!--android:layout_marginStart="24dp"-->
+<!--android:gravity="center"-->
+<!--app:ccp_autoDetectCountry="true"-->
+<!--app:ccp_contentColor="@color/black"-->
+<!--app:ccp_defaultNameCode="india"-->
+<!--app:ccp_showNameCode="false"-->
+<!--app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"-->
+<!--app:layout_constraintStart_toStartOf="@+id/etLN"-->
+<!--tools:ccp_textSize="15dp">-->
+
+<!--</com.hbb20.CountryCodePicker>-->
 

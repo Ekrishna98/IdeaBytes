@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register_new);
 
         mfb = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
@@ -89,41 +89,41 @@ public class Register extends AppCompatActivity {
             }
         });
 
-
-        //****  Navigation Drawer Stating...  ***//
-
-        nav = findViewById(R.id.nv);
-        drawer1 = findViewById(R.id.drawer1);
-
-        toolbar = (Toolbar) findViewById(R.id.toolBar);
-        setSupportActionBar(toolbar);
-
-        toggle = new ActionBarDrawerToggle(this, drawer1, toolbar, R.string.open, R.string.close);
-        drawer1.addDrawerListener(toggle);
-        toggle.syncState();
-
-        // Adding Click events to our navigation drawer
-        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.contactus:
-                        Toast.makeText(Register.this, "contact open", Toast.LENGTH_SHORT).show();
-                        drawer1.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.settings_menu:
-                        Toast.makeText(Register.this, "settings open", Toast.LENGTH_SHORT).show();
-                        drawer1.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.logout:
-                        Toast.makeText(Register.this, "logout", Toast.LENGTH_SHORT).show();
-                        //drawer1.closeDrawer(GravityCompat.START);
-                        finish();
-                        break;
-                }
-                return true;
-            }
-        });    // ***   Navigation Drawer Ends.  **** //
+//
+//        //****  Navigation Drawer Stating...  ***//
+//
+//        nav = findViewById(R.id.nv);
+//        drawer1 = findViewById(R.id.drawer1);
+//
+//        toolbar = (Toolbar) findViewById(R.id.toolBar);
+//        setSupportActionBar(toolbar);
+//
+//        toggle = new ActionBarDrawerToggle(this, drawer1, toolbar, R.string.open, R.string.close);
+//        drawer1.addDrawerListener(toggle);
+//        toggle.syncState();
+//
+//        // Adding Click events to our navigation drawer
+//        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()) {
+//                    case R.id.contactus:
+//                        Toast.makeText(Register.this, "contact open", Toast.LENGTH_SHORT).show();
+//                        drawer1.closeDrawer(GravityCompat.START);
+//                        break;
+//                    case R.id.settings_menu:
+//                        Toast.makeText(Register.this, "settings open", Toast.LENGTH_SHORT).show();
+//                        drawer1.closeDrawer(GravityCompat.START);
+//                        break;
+//                    case R.id.logout:
+//                        Toast.makeText(Register.this, "logout", Toast.LENGTH_SHORT).show();
+//                        //drawer1.closeDrawer(GravityCompat.START);
+//                        finish();
+//                        break;
+//                }
+//                return true;
+//            }
+//        });    // ***   Navigation Drawer Ends.  **** //
 
     }
 
