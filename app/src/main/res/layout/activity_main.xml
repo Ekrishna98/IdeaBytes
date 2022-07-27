@@ -8,248 +8,239 @@
     android:id="@+id/drawer1"
     android:orientation="horizontal"
     tools:context=".Register">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3A841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="IdeaBytes"
+        app:titleTextColor="@color/black" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#B3A841"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:title="IdeaBytes"
-            app:titleTextColor="@color/black" />
 
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="96dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        app:srcCompat="@drawable/ideabytes" />
 
-        <ImageView
-            android:id="@+id/iv1"
-            android:layout_width="96dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolBar"
-            app:srcCompat="@drawable/ideabytes" />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/ideabytes"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar" />
 
-        <TextView
-            android:id="@+id/tv5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/ideabytes"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.600"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolBar" />
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/innovation_is_business"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tv5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv5"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
 
-        <TextView
-            android:id="@+id/tv6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/innovation_is_business"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="@+id/tv5"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tv5"
-            app:layout_constraintTop_toBottomOf="@+id/tv5" />
+    <EditText
+        android:id="@+id/etFN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:background="@drawable/ideabytesresource"
+        android:drawableStart="@drawable/person_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv1" />
 
-        <EditText
-            android:id="@+id/etFN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:autofillHints=""
-            android:background="@drawable/ideabytesresource"
-            android:drawableStart="@drawable/person_black"
-            android:drawablePadding="10dp"
-            android:hint="@string/first_name"
-            android:inputType="textPersonName"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.642"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv1" />
+    <EditText
+        android:id="@+id/etMail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ideabytesresource"
+        android:drawableStart="@drawable/email_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etLN"
+        app:layout_constraintStart_toStartOf="@+id/etLN"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
-        <EditText
-            android:id="@+id/etMail1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ideabytesresource"
-            android:drawableStart="@drawable/email_black"
-            android:drawablePadding="10dp"
-            android:hint="@string/e_mail"
-            android:inputType="textEmailAddress"
-            android:padding="8dp"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/etLN"
-            app:layout_constraintStart_toStartOf="@+id/etLN"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+    <EditText
+        android:id="@+id/etLN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:background="@drawable/ideabytesresource"
+        android:drawableStart="@drawable/person_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etFN"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etFN"
+        app:layout_constraintTop_toBottomOf="@+id/etFN" />
 
-        <EditText
-            android:id="@+id/etLN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:autofillHints=""
-            android:background="@drawable/ideabytesresource"
-            android:drawableStart="@drawable/person_black"
-            android:drawablePadding="10dp"
-            android:hint="@string/last_name"
-            android:inputType="textPersonName"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/etFN"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/etFN"
-            app:layout_constraintTop_toBottomOf="@+id/etFN" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#B3A841"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etCnPass"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/etCnPass"
+        app:layout_constraintTop_toBottomOf="@+id/etCnPass" />
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="#B3A841"
-            android:text="@string/register"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/etCnPass"
-            app:layout_constraintHorizontal_bias="0.518"
-            app:layout_constraintStart_toStartOf="@+id/etCnPass"
-            app:layout_constraintTop_toBottomOf="@+id/etCnPass" />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="46dp"
+        android:gravity="center"
+        android:text="@string/already_i_have_account"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
 
-        <TextView
-            android:id="@+id/tv3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="46dp"
-            android:gravity="center"
-            android:text="@string/already_i_have_account"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn"
-            app:layout_constraintTop_toBottomOf="@+id/btn" />
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="#E1180A"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
 
-        <TextView
-            android:id="@+id/tv4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:gravity="center"
-            android:text="@string/login"
-            android:textColor="#E1180A"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/btn"
-            app:layout_constraintTop_toBottomOf="@+id/btn" />
+    <EditText
+        android:id="@+id/etCnPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ideabytesresource"
+        android:drawableStart="@drawable/key_off_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/conform_password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etPass"
+        app:layout_constraintStart_toStartOf="@+id/etPass"
+        app:layout_constraintTop_toBottomOf="@+id/etPass" />
 
-        <EditText
-            android:id="@+id/etCnPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ideabytesresource"
-            android:drawableStart="@drawable/key_off_black"
-            android:drawablePadding="10dp"
-            android:hint="@string/conform_password"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/etPass"
-            app:layout_constraintStart_toStartOf="@+id/etPass"
-            app:layout_constraintTop_toBottomOf="@+id/etPass" />
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_contentColor="@color/black"
+        app:ccp_defaultNameCode="india"
+        app:ccp_showNameCode="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/etLN"
+        tools:ccp_textSize="15dp">
 
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/ccp"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginStart="24dp"
-            android:gravity="center"
-            app:ccp_autoDetectCountry="true"
-            app:ccp_contentColor="@color/black"
-            app:ccp_defaultNameCode="india"
-            app:ccp_showNameCode="false"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
-            app:layout_constraintStart_toStartOf="@+id/etLN"
-            tools:ccp_textSize="15dp">
+    </com.hbb20.CountryCodePicker>
 
-        </com.hbb20.CountryCodePicker>
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ideabytesresource"
+        android:drawableStart="@drawable/phone_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/phonenumber"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etLN"
+        app:layout_constraintTop_toBottomOf="@+id/etLN"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <EditText
-            android:id="@+id/editTextPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ideabytesresource"
-            android:drawableStart="@drawable/phone_black"
-            android:drawablePadding="10dp"
-            android:hint="@string/phonenumber"
-            android:inputType="phone"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/etLN"
-            app:layout_constraintTop_toBottomOf="@+id/etLN"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <EditText
-            android:id="@+id/etPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ideabytesresource"
-            android:drawableStart="@drawable/key_black"
-            android:drawablePadding="10dp"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/etMail1"
-            app:layout_constraintStart_toStartOf="@+id/etMail1"
-            app:layout_constraintTop_toBottomOf="@+id/etMail1"
-            app:passwordToggleEnabled="true" />
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ideabytesresource"
+        android:drawableStart="@drawable/key_black"
+        android:drawablePadding="10dp"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/etMail1"
+        app:layout_constraintStart_toStartOf="@+id/etMail1"
+        app:layout_constraintTop_toBottomOf="@+id/etMail1"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</RelativeLayout>
-
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nvReg"
+        android:id="@+id/nv"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:visibility="gone"
         app:headerLayout="@layout/nav_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/navigation_menu" />
-
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
