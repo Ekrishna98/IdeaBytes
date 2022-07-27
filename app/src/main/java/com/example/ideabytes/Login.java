@@ -74,7 +74,7 @@ public class Login extends AppCompatActivity {
 
       // Navigation Drawer Stating...
 
-        nav = findViewById(R.id.nv);
+        nav = findViewById(R.id.nvLog);
         drawer = findViewById(R.id.drawer);
 
         //getSupportActionBar().hide();
