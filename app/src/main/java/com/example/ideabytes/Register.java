@@ -92,11 +92,12 @@ public class Register extends AppCompatActivity {
 
         //****  Navigation Drawer Stating...  ***//
 
-        nav = findViewById(R.id.nv);
+        nav = findViewById(R.id.nvReg);
         drawer1 = findViewById(R.id.drawer1);
 
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
+        nav.setVisibility(View.VISIBLE);
 
         toggle = new ActionBarDrawerToggle(this, drawer1, toolbar, R.string.open, R.string.close);
         drawer1.addDrawerListener(toggle);
