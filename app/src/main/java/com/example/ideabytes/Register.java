@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register_new);
 
         mfb = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
@@ -92,8 +92,9 @@ public class Register extends AppCompatActivity {
 
         //****  Navigation Drawer Stating...  ***//
 
-        nav = findViewById(R.id.nv);
-        drawer1 = findViewById(R.id.drawer1);
+        nav = findViewById(R.id.nvReg);
+        nav.setVisibility(View.VISIBLE);
+        drawer1 = findViewById(R.id.drawerReg);
 
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
@@ -119,6 +120,7 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(Register.this, "logout", Toast.LENGTH_SHORT).show();
                         //drawer1.closeDrawer(GravityCompat.START);
                         finish();
+                        System.exit(0);
                         break;
                 }
                 return true;

@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_login_new);
 
         LogRegister = findViewById(R.id.LogRegister);
         LoginEmail = findViewById(R.id.LoginMail);
@@ -75,7 +75,8 @@ public class Login extends AppCompatActivity {
       // Navigation Drawer Stating...
 
         nav = findViewById(R.id.nvLog);
-        drawer = findViewById(R.id.drawer);
+        nav.setVisibility(View.VISIBLE);
+        drawer = findViewById(R.id.drawerLog);
 
         //getSupportActionBar().hide();
      toolbar=(Toolbar)findViewById(R.id.toolBar);
@@ -103,6 +104,7 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "logout", Toast.LENGTH_SHORT).show();
                         //drawer.closeDrawer(GravityCompat.START);
                         finish();
+                        System.exit(0);
                         break;
                 }
                 return true;
