@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Home_page extends AppCompatActivity {
 
@@ -13,6 +14,10 @@ public class Home_page extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
        // getSupportActionBar().hide();
+        // Hide StatusBar & Navigation Bar..........
+        View windowDecorView = getWindow().getDecorView();
+        windowDecorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+
 
         Thread t = new Thread(){
             public void run(){
